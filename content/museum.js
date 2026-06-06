@@ -1,8 +1,8 @@
 export const site = {
   name: 'heyrune',
   url: 'https://heyrune.fund',
-  github: 'https://github.com/rapkuryer/heyrune',
-  repoDocs: 'https://github.com/rapkuryer/heyrune/tree/main/docs',
+  github: 'https://github.com/rapkuryer/heyrune-org-base-museum',
+  repoDocs: 'https://github.com/rapkuryer/heyrune-org-base-museum/tree/main/docs',
   twitter: 'https://x.com/rapkuryers',
   base: 'https://base.org',
   title: 'Base Ecosystem Museum',

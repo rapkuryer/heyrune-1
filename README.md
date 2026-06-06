@@ -1,8 +1,8 @@
-# Heyrune on Base — Base Ecosystem Museum
+# Heyrune org | Base Museum
 
-**Live site:** [heyrune.fund](https://heyrune.fund)
+**Official repository** for [heyrune.org](https://heyrune.org) — Heyrune org | Base Museum — heyrune.org
 
-An interactive museum documenting the Base ecosystem — protocols, culture, builders, and onchain history. Built and curated by [Ilya Kalashnikov](https://x.com/rapkuryers).
+Heyrune is an interactive exhibition documenting the Base network: protocols, builders, culture, and onchain history.
 
 ## Features
 
