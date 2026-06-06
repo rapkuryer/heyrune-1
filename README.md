@@ -1,4 +1,4 @@
-# Heyrune — Base Ecosystem Museum
+# Heyrune on Base — Base Ecosystem Museum
 
 **Live site:** [heyrune.fund](https://heyrune.fund)
 
