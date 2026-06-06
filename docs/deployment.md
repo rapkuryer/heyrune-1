@@ -1,6 +1,11 @@
-# Deployment
+# Heyrune · Deployment
 
-## Local development
+## Requirements
+
+- Node.js 18+
+- npm
+
+## Local setup
 
 ```bash
 npm install
@@ -8,14 +13,18 @@ cp .env.example .env.local
 npm run dev
 ```
 
-## Vercel
+## Production (Vercel)
 
-1. Import [github.com/rapkuryer/heyrune](https://github.com/rapkuryer/heyrune) on Vercel
-2. Framework preset: **Next.js** (auto-detected)
+1. Connect this repository in [Vercel](https://vercel.com)
+2. Framework: **Next.js**
 3. Environment variables:
-   - `WEBSITE_URL` = `https://heyrune.fund`
-   - `OPENAI_API_KEY` = your key (required for `/agent`)
-4. Add custom domain `heyrune.fund` in project settings
+
+| Variable | Value |
+|----------|-------|
+| `WEBSITE_URL` | `https://heyrune.org` |
+| `AGENT_API_KEY` | Heyrune Agent API key |
+
+4. Add custom domain: `heyrune.org`
 
 ## Build
 
@@ -24,4 +33,4 @@ npm run build
 npm start
 ```
 
-Production build runs `next-sitemap` automatically via the `postbuild` script.
+The `postbuild` script generates sitemap and robots.txt via `next-sitemap`.

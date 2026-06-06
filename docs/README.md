@@ -1,18 +1,16 @@
-# Heyrune documentation
+# Heyrune · Documentation
 
-Public documentation for the [Base Ecosystem Museum](https://heyrune.fund).
+Official documentation for the Heyrune platform.
 
-This folder mirrors the on-site museum guide so anyone can read, cite, or contribute without running the app.
+## Documents
 
-## Contents
+| File | Description |
+|------|-------------|
+| [overview.md](./overview.md) | Product overview and museum guide |
+| [deployment.md](./deployment.md) | Local setup and production deployment |
 
-| Document | Description |
-|----------|-------------|
-| [museum-guide.md](./museum-guide.md) | Full museum guide — technology, culture, navigation |
-| [deployment.md](./deployment.md) | How to run locally and deploy on Vercel |
+## External links
 
-## Source code
-
-The full Next.js application lives in this repository: [github.com/rapkuryer/heyrune](https://github.com/rapkuryer/heyrune)
-
-**Developer:** Ilya Kalashnikov ([@rapkuryers](https://x.com/rapkuryers))
+- **Website:** [heyrune.org](https://heyrune.org)
+- **Live docs:** [heyrune.org/docs](https://heyrune.org/docs)
+- **X:** [@rapkuryers](https://x.com/rapkuryers)
