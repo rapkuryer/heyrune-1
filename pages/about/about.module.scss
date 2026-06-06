@@ -1,0 +1,261 @@
+@import 'styles/_functions';
+
+.about {
+  padding-bottom: mobile-vw(80px);
+
+  @include desktop {
+    padding-bottom: desktop-vw(120px);
+  }
+}
+
+.hero {
+  padding-top: mobile-vw(48px);
+  margin-bottom: mobile-vw(64px);
+
+  @include desktop {
+    padding-top: desktop-vw(80px);
+    margin-bottom: desktop-vw(120px);
+  }
+}
+
+.heroGrid {
+  display: flex;
+  flex-direction: column;
+  gap: mobile-vw(32px);
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    gap: desktop-vw(80px);
+  }
+}
+
+.photoWrap {
+  flex-shrink: 0;
+  width: mobile-vw(200px);
+
+  @include desktop {
+    width: desktop-vw(280px);
+  }
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.eyebrow {
+  opacity: 0.5;
+  margin-bottom: mobile-vw(12px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(16px);
+  }
+}
+
+.role {
+  margin-top: mobile-vw(16px);
+  color: var(--theme-contrast);
+
+  @include desktop {
+    margin-top: desktop-vw(24px);
+  }
+}
+
+.tagline {
+  margin-top: mobile-vw(24px);
+  max-width: 42em;
+
+  @include desktop {
+    margin-top: desktop-vw(32px);
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: mobile-vw(12px);
+  margin-top: mobile-vw(32px);
+
+  @include desktop {
+    gap: desktop-vw(16px);
+    margin-top: desktop-vw(40px);
+  }
+}
+
+.content {
+  padding-bottom: mobile-vw(160px);
+
+  @include desktop {
+    padding-bottom: desktop-vw(200px);
+    align-items: start;
+  }
+}
+
+.sidebar {
+  grid-column: 1 / -1;
+  margin-bottom: mobile-vw(48px);
+
+  @include desktop {
+    grid-column: 1 / span 4;
+    position: sticky;
+    top: desktop-vw(40px);
+    margin-bottom: 0;
+  }
+
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: mobile-vw(16px) 0 0;
+
+    @include desktop {
+      margin-top: desktop-vw(24px);
+    }
+  }
+
+  .navLink {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    padding: mobile-vw(8px) 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.7;
+    transition: opacity 0.15s ease, color 0.15s ease;
+
+    @include desktop {
+      padding: desktop-vw(8px) 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: mobile-vw(2px);
+      width: 100%;
+      height: 2px;
+      background-color: var(--theme-contrast);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.15s ease;
+
+      @include desktop {
+        bottom: desktop-vw(2px);
+        height: desktop-vw(2px);
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+      color: var(--theme-contrast);
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.sections {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: mobile-vw(56px);
+  min-width: 0;
+
+  @include desktop {
+    grid-column: 5 / -1;
+    gap: desktop-vw(80px);
+  }
+}
+
+.introBlock {
+  .introLead {
+    font-weight: 600;
+    max-width: 52em;
+  }
+}
+
+.section {
+  scroll-margin-top: mobile-vw(80px);
+  max-width: 52em;
+
+  @include desktop {
+    scroll-margin-top: desktop-vw(40px);
+  }
+
+  .number {
+    margin-bottom: mobile-vw(12px);
+    opacity: 0.45;
+
+    @include desktop {
+      margin-bottom: desktop-vw(16px);
+    }
+  }
+
+  h2 {
+    margin-bottom: mobile-vw(16px);
+
+    @include desktop {
+      margin-bottom: desktop-vw(24px);
+    }
+  }
+
+  p {
+    margin-bottom: mobile-vw(20px);
+
+    @include desktop {
+      margin-bottom: desktop-vw(24px);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.experienceList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: mobile-vw(40px);
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: desktop-vw(56px) desktop-vw(64px);
+  }
+}
+
+.experienceTitle {
+  color: var(--theme-contrast);
+  margin-bottom: mobile-vw(12px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(16px);
+  }
+}
+
+.experienceItem {
+  margin-bottom: mobile-vw(24px);
+}
+
+.closing {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: mobile-vw(48px);
+
+  @include desktop {
+    padding-top: desktop-vw(64px);
+  }
+}
+
+.closingText {
+  max-width: 36em;
+  margin-bottom: mobile-vw(32px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(40px);
+  }
+}

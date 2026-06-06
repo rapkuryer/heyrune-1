@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://heyrune.fund
+
+# Sitemaps
+Sitemap: https://heyrune.fund/sitemap.xml

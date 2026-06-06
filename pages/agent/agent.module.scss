@@ -1,0 +1,74 @@
+@import 'styles/_functions';
+
+.agent {
+  background-color: var(--theme-primary);
+  color: var(--theme-secondary);
+  overflow-x: clip;
+}
+
+.hero {
+  padding-top: mobile-vw(120px);
+  padding-bottom: mobile-vw(48px);
+  max-width: desktop-vw(900px);
+
+  @include desktop {
+    padding-top: desktop-vw(160px);
+    padding-bottom: desktop-vw(64px);
+  }
+
+  .eyebrow {
+    margin-bottom: mobile-vw(16px);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+
+    @include desktop {
+      margin-bottom: desktop-vw(20px);
+    }
+  }
+
+  .lead {
+    margin-top: mobile-vw(24px);
+    max-width: desktop-vw(720px);
+
+    @include desktop {
+      margin-top: desktop-vw(32px);
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: mobile-vw(12px);
+    margin-top: mobile-vw(32px);
+
+    @include desktop {
+      gap: desktop-vw(16px);
+      margin-top: desktop-vw(40px);
+    }
+  }
+}
+
+.chatSection {
+  padding-bottom: mobile-vw(160px);
+
+  @include desktop {
+    padding-bottom: desktop-vw(200px);
+  }
+}
+
+.chatWrap {
+  width: 100%;
+  max-width: desktop-vw(1180px);
+  margin: 0 auto;
+}
+
+.note {
+  margin-top: mobile-vw(16px);
+  opacity: 0.5;
+  text-align: center;
+
+  @include desktop {
+    margin-top: desktop-vw(20px);
+  }
+}

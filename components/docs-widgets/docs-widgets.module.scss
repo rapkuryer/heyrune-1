@@ -1,0 +1,326 @@
+@import 'styles/_functions';
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: mobile-vw(32px) 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: mobile-vw(16px);
+  width: 100%;
+
+  @include desktop {
+    margin-top: desktop-vw(40px);
+    gap: desktop-vw(16px);
+  }
+}
+
+.stat {
+  padding: mobile-vw(16px);
+  border: 1px solid rgba(14, 14, 14, 0.12);
+  background: rgba(14, 14, 14, 0.03);
+  min-width: 0;
+
+  @include desktop {
+    padding: desktop-vw(16px);
+  }
+}
+
+.statLabel {
+  opacity: 0.55;
+  margin-bottom: mobile-vw(8px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(10px);
+  }
+}
+
+.statValue {
+  color: var(--theme-contrast);
+  font-size: mobile-vw(16px);
+  line-height: 115%;
+  word-break: break-word;
+
+  @include desktop {
+    font-size: desktop-vw(20px);
+  }
+}
+
+.flashblocks {
+  margin-top: mobile-vw(32px);
+
+  @include desktop {
+    margin-top: desktop-vw(40px);
+  }
+}
+
+.flashRow {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: mobile-vw(6px);
+
+  @include desktop {
+    gap: desktop-vw(8px);
+  }
+}
+
+.flash {
+  height: mobile-vw(48px);
+  background: rgba(14, 14, 14, 0.08);
+  transition: background 0.15s ease;
+
+  @include desktop {
+    height: desktop-vw(64px);
+  }
+}
+
+.flashActive {
+  background: var(--theme-contrast);
+}
+
+.caption {
+  margin-top: mobile-vw(12px);
+  opacity: 0.55;
+
+  @include desktop {
+    margin-top: desktop-vw(16px);
+  }
+}
+
+.flow {
+  margin-top: mobile-vw(32px);
+
+  @include desktop {
+    margin-top: desktop-vw(40px);
+  }
+}
+
+.flowSteps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: mobile-vw(8px);
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    gap: desktop-vw(12px);
+  }
+}
+
+.flowStep {
+  appearance: none;
+  border: 1px solid rgba(14, 14, 14, 0.12);
+  background: transparent;
+  padding: mobile-vw(16px);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+
+  @include desktop {
+    padding: desktop-vw(20px);
+  }
+
+  &:hover {
+    border-color: rgba(14, 14, 14, 0.3);
+  }
+}
+
+.flowStepActive {
+  border-color: var(--theme-contrast);
+  background: rgba(255, 0, 122, 0.06);
+}
+
+.flowIndex {
+  display: block;
+  opacity: 0.45;
+  margin-bottom: mobile-vw(8px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(10px);
+  }
+}
+
+.flowLabel {
+  display: block;
+}
+
+.flowDetail {
+  margin-top: mobile-vw(20px);
+  padding: mobile-vw(20px);
+  border-left: 3px solid var(--theme-contrast);
+  background: rgba(14, 14, 14, 0.03);
+
+  @include desktop {
+    margin-top: desktop-vw(24px);
+    padding: desktop-vw(24px);
+  }
+}
+
+.compare {
+  margin-top: mobile-vw(32px);
+  display: grid;
+  gap: mobile-vw(16px);
+
+  @include desktop {
+    margin-top: desktop-vw(40px);
+    grid-template-columns: 1fr 1fr;
+    gap: desktop-vw(24px);
+  }
+}
+
+.compareCol {
+  padding: mobile-vw(20px);
+  border: 1px solid rgba(14, 14, 14, 0.12);
+
+  @include desktop {
+    padding: desktop-vw(28px);
+  }
+
+  &:last-child {
+    border-color: var(--theme-contrast);
+    background: rgba(255, 0, 122, 0.04);
+  }
+}
+
+.compareTitle {
+  margin-bottom: mobile-vw(16px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(20px);
+  }
+}
+
+.compareList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: mobile-vw(10px);
+
+  @include desktop {
+    gap: desktop-vw(12px);
+  }
+
+  li {
+    padding-left: mobile-vw(16px);
+    position: relative;
+
+    @include desktop {
+      padding-left: desktop-vw(18px);
+    }
+
+    &::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--theme-contrast);
+    }
+  }
+}
+
+.table {
+  margin-top: mobile-vw(32px);
+  border-top: 1px solid rgba(14, 14, 14, 0.12);
+
+  @include desktop {
+    margin-top: desktop-vw(40px);
+  }
+}
+
+.tableRow {
+  display: grid;
+  gap: mobile-vw(8px);
+  padding: mobile-vw(20px) 0;
+  border-bottom: 1px solid rgba(14, 14, 14, 0.12);
+
+  @include desktop {
+    grid-template-columns: 180px 1fr;
+    align-items: start;
+    gap: desktop-vw(32px);
+    padding: desktop-vw(24px) 0;
+  }
+}
+
+.tableCategory {
+  opacity: 0.55;
+  margin-top: mobile-vw(4px);
+
+  @include desktop {
+    margin-top: desktop-vw(6px);
+  }
+}
+
+.calculator {
+  margin-top: mobile-vw(32px);
+  padding: mobile-vw(24px);
+  border: 1px solid rgba(14, 14, 14, 0.12);
+  background: rgba(14, 14, 14, 0.03);
+
+  @include desktop {
+    margin-top: desktop-vw(40px);
+    padding: desktop-vw(32px);
+  }
+}
+
+.calculatorLabel {
+  display: block;
+  opacity: 0.55;
+  margin-bottom: mobile-vw(12px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(16px);
+  }
+}
+
+.calculatorInput {
+  width: 100%;
+  accent-color: var(--theme-contrast);
+}
+
+.calculatorValue {
+  margin-top: mobile-vw(8px);
+  opacity: 0.7;
+
+  @include desktop {
+    margin-top: desktop-vw(10px);
+  }
+}
+
+.calculatorResults {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: mobile-vw(16px);
+  margin-top: mobile-vw(24px);
+
+  @include desktop {
+    gap: desktop-vw(24px);
+    margin-top: desktop-vw(32px);
+  }
+}
+
+.calculatorResult {
+  padding: mobile-vw(16px);
+  border: 1px solid rgba(14, 14, 14, 0.12);
+
+  @include desktop {
+    padding: desktop-vw(20px);
+  }
+}
+
+.calculatorResultAccent {
+  border-color: var(--theme-contrast);
+  background: rgba(255, 0, 122, 0.06);
+}
+
+.calculatorChain {
+  opacity: 0.55;
+  margin-bottom: mobile-vw(8px);
+
+  @include desktop {
+    margin-bottom: desktop-vw(10px);
+  }
+}
+
+.calculatorPrice {
+  color: var(--theme-contrast);
+}
